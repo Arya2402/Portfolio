@@ -15,7 +15,7 @@ const FONT_WEIGHTS={
     title:{min:400, max:900, default:400}
 };
 const setuptextHover=(container,type)=>{
-    if(!container) return;
+    if(!container) return()=>{};
 
     const letters = container.querySelectorAll("span");
     const{min,max, default:base}=FONT_WEIGHTS[type];
